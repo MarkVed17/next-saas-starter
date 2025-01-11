@@ -16,20 +16,18 @@ export default function Cta() {
           {/* <OverTitle>Lorem ipsum dolor sit amet</OverTitle> */}
           <SectionTitle>Optimizing Your Marine Operations, Safely and Efficiently</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            By leveraging industry expertise and advanced technology, we aim to reduce costs, enhance productivity, and safeguard your
+            assets, providing peace of mind in every journey.
           </Description>
           <ButtonGroup>
-            <NextLink href="#early-access" passHref>
-              <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
-              </Button>
+            <NextLink href="/contact" passHref>
+              <Button>Contact Us</Button>
             </NextLink>
-            <NextLink href="#whitepaper" passHref>
+            {/* <NextLink href="#whitepaper" passHref>
               <OutlinedButton transparent>
                 Features <span>&rarr;</span>
               </OutlinedButton>
-            </NextLink>
+            </NextLink> */}
           </ButtonGroup>
         </Stack>
       </Container>

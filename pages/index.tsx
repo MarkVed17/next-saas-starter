@@ -33,6 +33,11 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               reliability. With years of experience in Voyage Management, Chartering, Draft Surveys, and other essential marine services, we
               ensure smooth and seamless operations for our clients in the maritime industry.
             </p>
+            <br />
+            <p>
+              With A BS Marine Surveyors, you're not just managing voyages — you're achieving optimized marine operations that keep your
+              business progressing with confidence and efficiency.
+            </p>
           </BasicSection>
           <BasicSection
             imageUrl="/demo-illustration-2.svg"
@@ -41,18 +46,19 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             reversed
           >
             <p>
-              At A BS Marine, we specialize in premium marine services designed to optimize your operations with precision, efficiency, and
-              reliability. With years of experience in Voyage Management, Chartering, Draft Surveys, and other essential marine services, we
-              ensure smooth and seamless operations for our clients in the maritime industry.
+              Integrating smart technologies, real-time data, and automation, operations become more streamlined and performance-driven.
+              Enhanced connectivity and data-driven insights allow for quicker decision-making, better resource management, and increased
+              safety. With future-ready solutions and reliable systems, the marine industry can meet the demands of a rapidly evolving
+              world, ensuring smooth and optimized operations at sea.
             </p>
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
           <Cta />
-          <FeaturesGallery />
+          {/* <FeaturesGallery /> */}
           <Features />
-          <Testimonials />
-          <ScrollableBlogPosts posts={posts} />
+          {/* <Testimonials /> */}
+          {/* <ScrollableBlogPosts posts={posts} /> */}
         </DarkerBackgroundContainer>
       </HomepageWrapper>
     </>
