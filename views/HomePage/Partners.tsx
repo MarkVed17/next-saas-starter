@@ -7,22 +7,26 @@ import Container from 'components/Container';
 import { media } from 'utils/media';
 
 const PARTNER_LOGOS = [
-  'logoipsum-logo-1.svg',
-  'logoipsum-logo-2.svg',
-  'logoipsum-logo-3.svg',
-  'logoipsum-logo-4.svg',
-  'logoipsum-logo-5.svg',
-  'logoipsum-logo-6.svg',
-  'logoipsum-logo-7.svg',
+  'vps.svg',
+  'lauritzen-bulkers.svg',
+  'sgs.png',
+  'tata-nyk-removebg-preview.png',
+  'vedanta.svg',
+  // 'logoipsum-logo-2.svg',
+  // 'logoipsum-logo-3.svg',
+  // 'logoipsum-logo-4.svg',
+  // 'logoipsum-logo-5.svg',
+  // 'logoipsum-logo-6.svg',
+  // 'logoipsum-logo-7.svg',
 ];
 
 export default function Partners() {
   return (
     <PartnersWrapper>
-      <Title>official partners with</Title>
-      <Swiper
+      <Title>official clients</Title>
+      {/* <Swiper
         modules={[Autoplay]}
-        slidesPerView={6}
+        slidesPerView={5}
         spaceBetween={30}
         loop={true}
         autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false, waitForTransition: false, stopOnLastSlide: false }}
@@ -33,13 +37,23 @@ export default function Partners() {
           1025: { slidesPerView: 6 },
         }}
         className="swiper-wrapper"
-      >
+      > */}
+      {/* <div>
         {PARTNER_LOGOS.map((logo) => (
-          <SwiperSlide key={logo}>
-            <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={128} height={128} />
-          </SwiperSlide>
+          // <SwiperSlide key={logo}>
+          <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={100} height={80} />
+          // </SwiperSlide>
         ))}
-      </Swiper>
+      </div> */}
+      <LogosGrid>
+        {PARTNER_LOGOS.map((logo) => (
+          <LogoWrapper key={logo}>
+            <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={100} height={80} />
+          </LogoWrapper>
+        ))}
+      </LogosGrid>
+
+      {/* </Swiper> */}
     </PartnersWrapper>
   );
 }
@@ -78,4 +92,20 @@ const PartnersWrapper = styled(Container)`
       opacity: 1;
     }
   }
+`;
+
+const LogosGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5rem;
+`;
+
+const LogoWrapper = styled.div`
+  flex: 1 1 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
@@ -69,7 +70,9 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+            {/* <Logo /> */}
+            <Image src="/company-logo.svg" alt="Company Logo" width={96} height={96} />
+            <ListHeader>A BS Marine Surveyors</ListHeader>
           </LogoWrapper>
         </NextLink>
         <NavItemList>
@@ -132,6 +135,7 @@ const LogoWrapper = styled.a`
   display: flex;
   margin-right: auto;
   text-decoration: none;
+  align-items: center;
 
   color: rgb(var(--logoColor));
 `;
@@ -190,4 +194,14 @@ const Content = styled(Container)`
 const ColorSwitcherContainer = styled.div`
   width: 4rem;
   margin: 0 1rem;
+`;
+
+const ListHeader = styled.p`
+  font-weight: bold;
+  font-size: 2.25rem;
+
+  ${media('<=tablet')} {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 `;

@@ -13,8 +13,8 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          {/* <OverTitle>Lorem ipsum dolor sit amet</OverTitle> */}
+          <SectionTitle>Optimizing Your Marine Operations, Safely and Efficiently</SectionTitle>
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
             culpa.
