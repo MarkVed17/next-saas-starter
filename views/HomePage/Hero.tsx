@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import NextLink from 'next/link';
 import styled from 'styled-components';
 import Button from 'components/Button';
@@ -31,7 +32,15 @@ export default function Hero() {
           </NextLink>
         </CustomButtonGroup> */}
       </Contents>
-      <ImageContainer>{/* <HeroIllustration /> */}</ImageContainer>
+      <ImageContainer>
+        {/* <HeroIllustration /> */}
+        <Image
+          src="/industrial-container-cargo-freight-shipping-by-crane-logistic-import-export-shipyard-transparent-bg.png"
+          alt="Large Ship"
+          width={600}
+          height={400}
+        />
+      </ImageContainer>
     </HeroWrapper>
   );
 }
@@ -65,6 +74,13 @@ const ImageContainer = styled.div`
   flex: 1;
   justify-content: flex-end;
   align-items: flex-start;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  overflow: hidden; /* Ensure the rounded border is applied to the image */
+
+  img {
+    border-radius: 1rem; /* Apply rounded border to the image */
+  }
 
   svg {
     max-width: 45rem;
@@ -105,3 +121,13 @@ const Heading = styled.h1`
     margin-bottom: 2rem;
   }
 `;
+
+// const FullWidthSection = styled.section`
+//   width: 100%;
+//   position: relative;
+//   left: 50%;
+//   right: 50%;
+//   margin-left: -50vw;
+//   margin-right: -50vw;
+//   background-color: #f8f9fa; /* Adjust background color as needed */
+// `;

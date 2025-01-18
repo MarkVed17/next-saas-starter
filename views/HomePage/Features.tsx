@@ -8,40 +8,40 @@ import { media } from 'utils/media';
 
 const FEATURES = [
   {
-    imageUrl: '/grid-icons/asset-1.svg',
+    imageUrl: '/grid-icons/voyage-management.png',
     title: 'Voyage Management Advisory',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'With decades of expertise in ship management, we ensure seamless vessel operations, meeting the highest safety and quality standards in the oil & gas industry.',
   },
   {
-    imageUrl: '/grid-icons/asset-2.svg',
+    imageUrl: '/grid-icons/asset-5.svg',
     title: 'Ship Inspections',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Leveraging our extensive shipping industry experience, we offer a cost-effective, all-inclusive service package that includes budget estimates tailored to owner needs.',
   },
   {
-    imageUrl: '/grid-icons/asset-3.svg',
+    imageUrl: '/grid-icons/marine-survey.png',
     title: 'Marine Survey',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Our marine survey services combine deep industry knowledge with precision, offering thorough vessel inspections, condition assessments, and expert recommendations.',
   },
   {
     imageUrl: '/grid-icons/asset-4.svg',
     title: 'Port Captaincy',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Our port captaincy services ensure seamless vessel operations in port, managing all logistical, operational, and regulatory aspects.',
   },
   {
-    imageUrl: '/grid-icons/asset-5.svg',
+    imageUrl: '/grid-icons/asset-2.svg',
     title: 'Chartering',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'With 25+ years of experience, our global network and multilingual team excel in securing the right Offshore Vessels, Tankers, and Bulk Carriers for diverse projects.',
   },
   {
     imageUrl: '/grid-icons/asset-6.svg',
     title: 'Brokering',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'Our shipping brokerage services connect you to trusted vessels worldwide, ensuring smooth transactions and strategic solutions.',
   },
   // {
   //   imageUrl: '/grid-icons/asset-7.svg',
