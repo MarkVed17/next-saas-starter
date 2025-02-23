@@ -30,7 +30,7 @@ const footerItems: FooterItems = [
     title: 'Links',
     items: [
       // { title: 'Blog', href: '/blog' },
-      { title: 'Pricing', href: '/pricing' },
+      // { title: 'Pricing', href: '/pricing' },
       { title: 'Contact', href: '/contact' },
       // { title: 'FAQ', href: '/faq' },
       // { title: 'Help Center', href: '/help-center' },
@@ -39,7 +39,16 @@ const footerItems: FooterItems = [
   {
     title: 'Address',
     items: [
-      { title: '302, Jeevan Saathi CHS, Juhu Lane, Andheri (W), Mumbai - 400058', href: '/features2' },
+      { title: '302, Jeevan Saathi CHS, Juhu Lane, Andheri (W), Mumbai - 400058', href: '' },
+      // { title: 'Something2', href: '/something2' },
+      // { title: 'Something else2', href: '/something-else2' },
+      // { title: 'And something else2', href: '/and-something-else2' },
+    ],
+  },
+  {
+    title: 'Locations',
+    items: [
+      { title: 'Mumbai, Goa, Paradeep, Vishakhapattanam, Jaigad, Bankot, Surat, Kandla, Gangavaram', href: '' },
       // { title: 'Something2', href: '/something2' },
       // { title: 'Something else2', href: '/something-else2' },
       // { title: 'And something else2', href: '/and-something-else2' },
