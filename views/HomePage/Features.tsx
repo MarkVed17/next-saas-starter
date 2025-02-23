@@ -95,4 +95,5 @@ const Content = styled.div`
     margin-top: 1rem;
   }
   text-align: center;
+  margin-bottom: 2.5rem;
 `;
