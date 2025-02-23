@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { ColorModeScript } from 'nextjs-color-mode';
 import React, { PropsWithChildren } from 'react';
-import { TinaEditProvider } from 'tinacms/dist/edit-state';
+// import { TinaEditProvider } from 'tinacms/dist/edit-state';
 
 import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Providers>
         <Modals />
         <Navbar items={navItems} />
-        <TinaEditProvider
+        {/* <TinaEditProvider
           editMode={
             <TinaCMS
               query={pageProps.query}
@@ -65,9 +65,9 @@ function MyApp({ Component, pageProps }: AppProps) {
               {(livePageProps: any) => <Component {...livePageProps} />}
             </TinaCMS>
           }
-        >
-          <Component {...pageProps} />
-        </TinaEditProvider>
+        > */}
+        <Component {...pageProps} />
+        {/* </TinaEditProvider> */}
         <WaveCta />
         <Footer />
       </Providers>

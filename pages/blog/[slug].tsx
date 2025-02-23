@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { staticRequest } from 'tinacms';
 import Container from 'components/Container';
-import MDXRichText from 'components/MDXRichText';
+// import MDXRichText from 'components/MDXRichText';
 import { NonNullableChildrenDeep } from 'types';
 import { formatDate } from 'utils/formatDate';
 import { media } from 'utils/media';
@@ -72,7 +72,7 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
       <CustomContainer id="content" ref={contentRef}>
         <ShareWidget title={title} slug={slug} />
         <Header title={title} formattedDate={formattedDate} imageUrl={absoluteImageUrl} readTime={readTime} />
-        <MDXRichText content={content} />
+        {/* <MDXRichText content={content} /> */}
       </CustomContainer>
     </>
   );
