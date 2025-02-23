@@ -34,12 +34,7 @@ export default function Hero() {
       </Contents>
       <ImageContainer>
         {/* <HeroIllustration /> */}
-        <Image
-          src="/industrial-container-cargo-freight-shipping-by-crane-logistic-import-export-shipyard-transparent-bg.png"
-          alt="Large Ship"
-          width={600}
-          height={400}
-        />
+        <Image src="/cargo.jpg" alt="Large Ship" width={600} height={400} />
       </ImageContainer>
     </HeroWrapper>
   );

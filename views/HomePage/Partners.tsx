@@ -108,4 +108,6 @@ const LogoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
+  border-radius: 16px;
 `;
